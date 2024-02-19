@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <meta charset=UTF-8>
+    <title>V: Création d'un Portfolio Étudiant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        </div>
+    </nav>
+    <div class="card d-flex align-items-center justify-content-center ">
+        <h1>BURY Frédéric</h1>
+        <img width="500" alt="" src="frederic.jpg">
+        <p>Je m’appelle Frédéric j’ai 20 ans, je suis fan de jeuxvidéo, <br>j’aime lire la plus part du temps en ligne, je
+            fais de la muscu lors de mon temps libre.<br> Pour la
+            suite de ma vie professionnel <br>j’aimerais faire un
+            master en réalité virtuelle , <br> pour ensuite espérer
+            faire avance la réalité virtuelle .
+        </p>
+        <div class="container mt-4">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="myTabs">
+                <li class="nav-item">
+                    <a class="nav-link active" id="experience-tab" data-bs-toggle="tab" href="#experience">Expérience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="education-tab" data-bs-toggle="tab" href="#education">Éducation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="competence-tab" data-bs-toggle="tab" href="#competence">Compétences</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="experience">
+                    <!-- Content for the "Expérience" tab with Bootstrap Carousel -->
+                    <div id="experienceCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="data.jpg" alt="" height="250">
+                                <h1>Expérience 1</h1>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="devweb.png" alt="" height="250">
+                                <h1>Expérience 2</h1>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev " type="button" data-bs-target="#experienceCarousel" data-bs-slide="prev" >
+                            <span class="carousel-control-prev-icon text-secondary" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#experienceCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="education">
+                    <div class="list-group mt-3">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Lycée du Hainaut</h5>
+                                <small>2018-2021</small>
+                            </div>
+                            <p class="mb-1">BAC générale NSI - Physique Chimie </p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Université HDF insa Mont Houy</h5>
+                                <small>2021-2023</small>
+                            </div>
+                            <p class="mb-1">DEUST IOSI</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Université HDF insa Mont Houy</h5>
+                                <small>2023-2024</small>
+                            </div>
+                            <p class="mb-1">LPDWLM</p>
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="tab-pane fade" id="competence">
+                    <div class="card d-flex align-items-center justify-content-center">
+                        <p>
+                            Compétences :
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Langage de requête pour les bases de données.">
+                                <u>SQL</u>
+                            </span>,
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Langage de balisage pour la création de pages web.">
+                                <u>HTML</u>
+                            </span>,
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Langage de programmation côté client pour le développement web.">
+                                <u>JavaScript</u>
+                            </span>,
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Langage de script utilisé pour le développement web côté serveur.">
+                                <u>PHP</u>
+                            </span>,
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Langage de programmation impératif généraliste.">
+                                <u>C</u>
+                            </span>,
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Langage de programmation orienté objet.">
+                                <u>C++</u>
+                            </span>,
+                            <span data-bs-toggle="tooltip" data-bs-placement="top" title="Langage de programmation polyvalent et orienté objet.">
+                                <u>Java</u>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Voir Lettre de Motivation
+        </button>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Lettre de motivation</h5>
+                </div>
+                <div class="modal-body">
+
+
+                    Madame, Monsieur, <br> Actuellement étudiant en Licence 3 Professionnelle en Développement Web et Mobile
+                    au campus universitaire du Mont Houy, je suis enthousiaste à l'idée de mettre en pratique les compétences
+                    que j'ai acquises au cours de ma formation. C'est pourquoi je me permets de vous adresser ma candidature
+                    pour un stage en informatique d'une durée de 12 semaines au sein de votre entreprise, à partir du 2 avril
+                    2024. <br> Au cours de ma formation, j'ai développé une solide expertise en développement web et mobile,
+                    en utilisant des technologies telles que HTML, CSS, JavaScript, ainsi que des frameworks comme React et
+                    React Native. J'ai également acquis des compétences en gestion de bases de données, en sécurité informatique
+                    et en conception d'interfaces utilisateur conviviales. Mon parcours académique m'a également permis de
+                    travailler sur des projets concrets, en équipe, ce qui m'a sensibilisé à la collaboration et à la gestion
+                    de projets informatiques. <br> Intégrer votre entreprise représente pour moi une opportunité exceptionnelle
+                    d'appliquer mes compétences dans un environnement professionnel stimulant. Je suis convaincu que ce stage
+                    me permettra d'acquérir une expérience précieuse dans l’informatique. <br> Ma passion pour l'informatique,
+                    ma capacité d'adaptation, et mon désir d'apprendre continuellement me motivent à rejoindre votre équipe.
+                    Je suis convaincu que travailler au sein de votre entreprise me permettra d'acquérir des compétences
+                    essentielles pour ma future carrière, et je suis déterminé à apporter une contribution significative à
+                    vos projets. <br> Je reste à votre disposition pour discuter de ma candidature et de ma motivation lors
+                    d'un entretien. Je vous remercie de l'attention que vous porterez à ma demande. <br> Cordialement, Frédéric
+                    BURY
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
